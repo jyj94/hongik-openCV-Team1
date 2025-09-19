@@ -9,3 +9,10 @@
 * 간략한 프로그램 구상
   
 ![순서도](ReadmeImg/순서도.png)
+
+## 2025.09.19
+* UI 설계
+![메인 UI](ReadmeImg\mainWindow.png)
+![경고창](ReadmeImg\경고창.png)
+* 신호등 & 횡단보도 탐지 설계
+* 보행자 & 차량 탐지 설계

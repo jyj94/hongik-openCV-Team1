@@ -105,7 +105,7 @@ class MainWindow():
         sys.exit(self.app.exec())
     
     def testButtonAct(self):
-        self.crosswalk = CrosswalkSign(self.signLabel, self.countLCD, startCount=10, blinkInterval=500)
+        self.crosswalk = CrosswalkSign(self.signLabel, self.countLCD, startCount=8, blinkInterval=500)
         
     def testCCTVLive(self):
         pass
