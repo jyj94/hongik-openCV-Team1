@@ -11,8 +11,10 @@
 ![순서도](ReadmeImg/순서도.png)
 
 ## 2025.09.19
-* UI 설계
-![메인 UI](ReadmeImg\mainWindow.png)
-![경고창](ReadmeImg\경고창.png)
+* UI 설계 
+![메인 UI](ReadmeImg/mainWindow.png)
+![경고창](ReadmeImg/경고창.png)
 * 신호등 & 횡단보도 탐지 설계
 * 보행자 & 차량 탐지 설계
+* 휠체어 관련 데이터셋 입수 후 학습
+* 차량, 보행자 초기 모델 구현
