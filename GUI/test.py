@@ -108,19 +108,8 @@ class MainWindow():
         self.crosswalk = CrosswalkSign(self.signLabel, self.countLCD, startCount=10, blinkInterval=500)
         
     def testCCTVLive(self):
-        import requests
-
-        key = 'p5U4O4NSi1DMzC3GvzOH7FG8sBMvn1nZ6oZCqn3dDrI'
-        streetType = 1
+        pass
         
-        url = "http://www.utic.go.kr/guide/cctvOpenData.do?key=" + key
-        headers = {"Authorization": "Bearer p5U4O4NSi1DMzC3GvzOH7FG8sBMvn1nZ6oZCqn3dDrI"}
-
-        response = requests.get(url, headers=headers)
-        if response.status_code == 200:
-            print("접속 성공")
-        else:
-            print("접속 실패", response.status_code)
             
     def openVideoFile(self):
         filePath,_ = QFileDialog.getOpenFileName(
@@ -153,8 +142,9 @@ class MainWindow():
         interval = int(1000 / fps) if fps > 0 else 33
         self.timer.start(interval)
     
-    def nextFrame(self):
-        ret, frame = self.videoCap.read()
+    def nextFrame(self, ret = None, frame = None):
+        if ret is None:
+            ret, frame = self.videoCap.read()
         self.currentFrame += 1
         if self.currentFrame >= self.MaximumFrame:
             self.videoCap.set(cv2.CAP_PROP_POS_FRAMES, 0)
