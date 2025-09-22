@@ -10,9 +10,9 @@ class CrosswalkSign():
         self.sign = signWidget
         self.LCD = LCDWidget
         
-        self.greenLightOnImg = QPixmap('GUI/img/greenLightOn.png')
-        self.greenLightOffImg = QPixmap('GUI/img/greenLightOff.png')
-        self.redLightImg = QPixmap('GUI/img/redLight.png')
+        self.greenLightOnImg = QPixmap('/home/inteee/opencvZoo2/imageproject/data/GUI_image/greenLightOn.png')
+        self.greenLightOffImg = QPixmap('/home/inteee/opencvZoo2/imageproject/data/GUI_image/greenLightOff.png')
+        self.redLightImg = QPixmap('/home/inteee/opencvZoo2/imageproject/data/GUI_image/redLight.png')
 
         self.isGreen = True  # 신호등이 초록 불인지
         self.greenOn = True  # 초록불 깜빡임 상태
@@ -69,7 +69,7 @@ class MainWindow():
         
         #어플리케이션 객체 생성 및 ui 파일 불러오기
         self.app = QApplication([])
-        uiFile = QFile('GUI/mainWindow.ui')
+        uiFile = QFile('/home/inteee/opencvZoo2/imageproject/GUI/mainWindow.ui')
         uiFile.open(QFile.ReadOnly)
         loader = QUiLoader()
         self.window = loader.load(uiFile)
@@ -84,6 +84,8 @@ class MainWindow():
 
         self.testButton = self.window.findChild(QPushButton, "testButton")
         self.testButton.clicked.connect(self.testButtonAct)
+        
+        print(self.testButton)
 
         self.cctvButton = self.window.findChild(QPushButton, "cctvButton")
         self.cctvButton.clicked.connect(self.testCCTVLive)
