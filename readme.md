@@ -2,7 +2,7 @@
 ## 문서
 * 계획서 : [링크](https://docs.google.com/document/d/18R3eeF_AJIPWrHmkONuViD_FoFXy8LPV/edit)
 * 기술서 : [링크](https://docs.google.com/document/d/1kuFEPnICBeXRHZ4nQCZWYUO4OSj4ask0/edit)
-* PPT : [링크](https://docs.google.com/presentation/d/1q-a8FOxoGX1aSD66FCKSfEmWfIR9d9YC-bG86JSy4Yk/edit?usp=sharing)
+* PPT : [링크](https://www.canva.com/design/DAGzxgL6SDI/4w6ao4hOCpDlLW7i9hzVuw/edit?utm_content=DAGzxgL6SDI&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 ## 2025.09.18
 * 주제 선정
 * 역할 분담
